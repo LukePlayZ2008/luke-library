@@ -3,7 +3,8 @@ import * as pdfjsLib from 'pdfjs-dist';
 import { ZoomIn, ZoomOut, ChevronLeft, ChevronRight, Maximize2, Search, X } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`;
+// Set worker path
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
 
 interface PDFViewerProps {
   url: string;
@@ -21,7 +22,6 @@ export function PDFViewer({ url }: PDFViewerProps) {
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isFullscreen, setIsFullscreen] = useState(false);
 
   const renderPage = useCallback(async (pageNum: number) => {
     if (!pdfDoc || !canvasRef.current) return;
@@ -35,10 +35,11 @@ export function PDFViewer({ url }: PDFViewerProps) {
     canvas.height = viewport.height;
     canvas.width = viewport.width;
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     await page.render({
       canvasContext: context,
       viewport,
-    }).promise;
+    } as any).promise;
   }, [pdfDoc, scale]);
 
   useEffect(() => {
@@ -46,7 +47,7 @@ export function PDFViewer({ url }: PDFViewerProps) {
       try {
         setLoading(true);
         setError(null);
-        const loadingTask = pdfjsLib.getDocument(url);
+        const loadingTask = pdfjsLib.getDocument({ url });
         const pdf = await loadingTask.promise;
         setPdfDoc(pdf);
         setTotalPages(pdf.numPages);
@@ -79,20 +80,10 @@ export function PDFViewer({ url }: PDFViewerProps) {
     if (!containerRef.current) return;
     if (!document.fullscreenElement) {
       containerRef.current.requestFullscreen();
-      setIsFullscreen(true);
     } else {
       document.exitFullscreen();
-      setIsFullscreen(false);
     }
   };
-
-  useEffect(() => {
-    const handleFullscreenChange = () => {
-      setIsFullscreen(!!document.fullscreenElement);
-    };
-    document.addEventListener('fullscreenchange', handleFullscreenChange);
-    return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
-  }, []);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
