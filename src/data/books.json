@@ -1,67 +1,92 @@
 {
-  "books": [
+  "albums": [
     {
-      "id": "book-1",
-      "title": "Introduction to Computer Science",
-      "category": "TextBooks",
+      "id": "textbooks",
+      "name": "TextBooks",
+      "description": "Educational textbooks and academic resources for students",
       "cover": "https://images.pexels.com/photos/5905432/pexels-photo-5905432.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
+      "books": [
+        {
+          "id": "book-1",
+          "title": "Introduction to Computer Science",
+          "cover": "https://images.pexels.com/photos/5905432/pexels-photo-5905432.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "2.5 MB"
+        },
+        {
+          "id": "book-2",
+          "title": "Advanced Mathematics",
+          "cover": "https://images.pexels.com/photos/6256107/pexels-photo-6256107.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "3.2 MB"
+        },
+        {
+          "id": "book-3",
+          "title": "Physics Fundamentals",
+          "cover": "https://images.pexels.com/photos/256262/pexels-photo-256262.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "4.1 MB"
+        },
+        {
+          "id": "book-4",
+          "title": "Chemistry Essentials",
+          "cover": "https://images.pexels.com/photos/209713/pexels-photo-209713.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "2.8 MB"
+        },
+        {
+          "id": "book-5",
+          "title": "Programming with Python",
+          "cover": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "5.5 MB"
+        },
+        {
+          "id": "book-6",
+          "title": "Data Structures & Algorithms",
+          "cover": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "3.7 MB"
+        }
+      ]
     },
     {
-      "id": "book-2",
-      "title": "Advanced Mathematics",
-      "category": "TextBooks",
-      "cover": "https://images.pexels.com/photos/6256107/pexels-photo-6256107.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
-    },
-    {
-      "id": "book-3",
-      "title": "Physics Fundamentals",
-      "category": "TextBooks",
-      "cover": "https://images.pexels.com/photos/256262/pexels-photo-256262.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
-    },
-    {
-      "id": "book-4",
-      "title": "Chemistry Essentials",
-      "category": "TextBooks",
-      "cover": "https://images.pexels.com/photos/209713/pexels-photo-209713.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
-    },
-    {
-      "id": "book-5",
-      "title": "Programming with Python",
-      "category": "TextBooks",
-      "cover": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
-    },
-    {
-      "id": "book-6",
-      "title": "Data Structures & Algorithms",
-      "category": "TextBooks",
-      "cover": "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
-    },
-    {
-      "id": "book-7",
-      "title": "Web Development Mastery",
-      "category": "Special Edition",
+      "id": "special-edition",
+      "name": "Special Edition",
+      "description": "Premium resources, guides, and special collections",
       "cover": "https://images.pexels.com/photos/11035422/pexels-photo-11035422.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
-    },
-    {
-      "id": "book-8",
-      "title": "Business Strategy Guide",
-      "category": "Special Edition",
-      "cover": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
-    },
-    {
-      "id": "book-9",
-      "title": "Creative Design Collection",
-      "category": "Special Edition",
-      "cover": "https://images.pexels.com/photos/3178938/pexels-photo-3178938.jpeg?auto=compress&cs=tinysrgb&w=400",
-      "pdf": "/books/sample.pdf"
+      "books": [
+        {
+          "id": "book-7",
+          "title": "Web Development Mastery",
+          "cover": "https://images.pexels.com/photos/11035422/pexels-photo-11035422.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "8.2 MB"
+        },
+        {
+          "id": "book-8",
+          "title": "Business Strategy Guide",
+          "cover": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "4.5 MB"
+        },
+        {
+          "id": "book-9",
+          "title": "Creative Design Collection",
+          "cover": "https://images.pexels.com/photos/3178938/pexels-photo-3178938.jpeg?auto=compress&cs=tinysrgb&w=400",
+          "pdf": "/books/sample.pdf",
+          "size": "12.3 MB"
+        }
+      ]
     }
-  ]
+  ],
+  "creator": {
+    "name": "Ye Lin Khant (Luke)",
+    "title": "Web Developer",
+    "bio": "Passionate web developer creating beautiful and functional digital experiences. Love building tools that help people learn and grow.",
+    "photo": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150",
+    "github": "https://github.com/LukePlayZ2008",
+    "telegram": "https://t.me/lukelibrary",
+    "facebook": "https://facebook.com/lukelibrary"
+  }
 }

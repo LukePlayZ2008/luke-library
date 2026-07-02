@@ -2,23 +2,22 @@ export const translations = {
   en: {
     nav: {
       home: 'Home',
-      textbooks: 'TextBooks',
-      specialEdition: 'Special Edition',
+      albums: 'Albums',
     },
     hero: {
       title: 'Luke Library',
       subtitle: 'Read and Download Digital Books Easily',
     },
-    library: {
-      title: 'Library',
-      openBook: 'Open Book',
-      noBooks: 'No books found',
+    albums: {
+      title: 'Book Albums',
+      totalBooks: 'books',
+      viewAlbum: 'View Album',
     },
-    categories: {
-      textbooks: 'TextBooks',
-      textbooksDesc: 'Educational books and textbooks',
-      specialEdition: 'Special Edition',
-      specialEditionDesc: 'Premium resources, guides, and special collections',
+    book: {
+      viewPdf: 'View PDF',
+      downloadPdf: 'Download PDF',
+      size: 'Size',
+      noBooks: 'No books found',
     },
     bookPage: {
       back: 'Back',
@@ -33,6 +32,10 @@ export const translations = {
       loading: 'Loading PDF...',
       error: 'Failed to load PDF',
     },
+    creator: {
+      title: 'About Creator',
+      bio: 'Passionate web developer creating beautiful and functional digital experiences. Love building tools that help people learn and grow.',
+    },
     theme: {
       light: 'Light',
       dark: 'Dark',
@@ -41,27 +44,27 @@ export const translations = {
       en: 'English',
       my: 'Burmese',
     },
+    backToTop: 'Back to Top',
   },
   my: {
     nav: {
       home: 'ပင်မစာမျက်နှာ',
-      textbooks: 'သင်ရိုးညွှန်းတမ်းများ',
-      specialEdition: 'အထူးထုတ်ဝေမူ',
+      albums: 'အယ်လဘမ်များ',
     },
     hero: {
       title: 'Luke စာကြည့်တိုက်',
       subtitle: 'ဒစ်ဂျစ်တယ်စာအုပ်များကို လွယ်ကူစွာ ဖတ်ရှုနှင့် ဒေါင်းလုဒ်လုပ်ပါ',
     },
-    library: {
-      title: 'စာကြည့်တိုက်',
-      openBook: 'စာအုပ်ဖွင့်ပါ',
-      noBooks: 'စာအုပ်မတွေ့ပါ',
+    albums: {
+      title: 'စာအုပ်အယ်လဘမ်များ',
+      totalBooks: 'စာအုပ်များ',
+      viewAlbum: 'အယ်လဘမ်ကြည့်ရှုပါ',
     },
-    categories: {
-      textbooks: 'သင်ရိုးညွှန်းတမ်းများ',
-      textbooksDesc: 'ပညာရေးစာအုပ်များနှင့် သင်ရိုးညွှန်းတမ်းများ',
-      specialEdition: 'အထူးထုတ်ဝေမူ',
-      specialEditionDesc: 'အထူးအရင်းအမြစ်များ၊ လမ်းညွှန်များနှင့် အထူးစုစည်းမှုများ',
+    book: {
+      viewPdf: 'PDF ကြည့်ရှုပါ',
+      downloadPdf: 'PDF ဒေါင်းလုဒ်လုပ်ပါ',
+      size: 'အရွယ်အစား',
+      noBooks: 'စာအုပ်မတွေ့ပါ',
     },
     bookPage: {
       back: 'နောက်သို့',
@@ -76,6 +79,10 @@ export const translations = {
       loading: 'PDF ဖိုင် တင်နေသည်...',
       error: 'PDF ဖိုင် ဖတ်ရှုမရပါ',
     },
+    creator: {
+      title: 'ဖန်တီးသူအကြောင်း',
+      bio: 'လှပသော အသုံးချဆော့ဝဲများ ဖန်တီးသူ ဝဘ်ဒေVELOPER။ လူများ သင်ယုနှင့် ကြီးထွားရန် ကူညီသော ကိရိယာများ တည်ဆောက်ခြင်းကို နှစ်သက်ပါသည်။',
+    },
     theme: {
       light: 'အလင်း',
       dark: 'အမှောင်',
@@ -84,6 +91,7 @@ export const translations = {
       en: 'အင်္ဂလိပ်',
       my: 'မြန်မာ',
     },
+    backToTop: 'အပေါ်သို့',
   },
 };
 
