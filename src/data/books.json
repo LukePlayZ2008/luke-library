@@ -84,9 +84,11 @@
     "name": "Ye Lin Khant (Luke)",
     "title": "Web Developer",
     "bio": "Passionate web developer creating beautiful and functional digital experiences. Love building tools that help people learn and grow.",
-    "photo": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150",
-    "github": "https://github.com/LukePlayZ2008",
-    "telegram": "https://t.me/lukelibrary",
-    "facebook": "https://facebook.com/lukelibrary"
+    "website": "https://www.lukelabs.site",
+    "socials": {
+      "facebook": "https://facebook.com/codebyluke",
+      "tiktok": "https://tiktok.com/@codebyluke",
+      "telegram": "https://t.me/Luke_PlayZ"
+    }
   }
 }
